@@ -2,6 +2,6 @@ mod board;
 use board::isola_board::Board;
 
 fn main() {
-    let mut board = Board::new();
+    let board = Board::new();
     board.display();
 }
