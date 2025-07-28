@@ -1,5 +1,7 @@
 mod board;
+use board::isola_board::Board;
 
 fn main() {
-    println!("Hello, world!");
+    let mut board = Board::new();
+    board.display();
 }

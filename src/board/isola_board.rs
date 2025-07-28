@@ -39,4 +39,13 @@ impl Board {
             panic!("white square cannot be greater than 6*8");
         }
     }
+
+    pub fn display(&self) {
+        for i in 0..6 {
+            for j in 0..8 {
+                print!("{} ", self.tiles[i * 8 + j]);
+            }
+            println!("");
+        }
+    }
 }
